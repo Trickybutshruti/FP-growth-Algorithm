@@ -1,0 +1,11 @@
+Item1,Item2,Item3,Item4
+milk,bread,butter,
+bread,butter,cheese,
+milk,bread,cheese,
+bread,butter,,
+milk,butter,cheese,
+milk,bread,,
+butter,cheese,,
+milk,cheese,,
+bread,cheese,,
+milk,bread,butter,cheese
