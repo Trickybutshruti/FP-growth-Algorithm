@@ -5,7 +5,7 @@ import pyfpgrowth
 # Function to run FP-Growth and display results
 def run_fpgrowth():
     min_support = float(min_support_entry.get())
-    transactions = [line.strip().split(',') for line in transactions_entry.get("1.0", tk.END).split('\n') if line.strip()]
+    transactions = [[item for item in line.strip().split(',') if item != ''] for line in transactions_entry.get("1.0", tk.END).split('\n') if line.strip()]
     patterns = pyfpgrowth.find_frequent_patterns(transactions, min_support)
     sorted_patterns = sorted(patterns.items(), key=lambda x: x[1], reverse=True)
     
